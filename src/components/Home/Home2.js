@@ -21,7 +21,7 @@ function Home2() {
             <p className="home-about-body">
               I’m a student passionate about building interactive web apps and experimenting with modern development tools.
               <br />
-              <br />I enjoy programming, still learning skills in Python, JavaScript, HTML, CSS, and React.
+              <br />I enjoy programming, still learning skills in
               <i>
                 <b className="purple"> Python, JavaScript, HTML, CSS, and React. </b>
               </i>
