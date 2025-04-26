@@ -38,7 +38,7 @@ function Home2() {
               <br />
               <br />
               I’m excited to create meaningful products through code and continue exploring
-              with <b className="purple">React</b> and
+              with
               <i>
                 <b className="purple">
                   {" "}
