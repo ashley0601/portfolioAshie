@@ -1,17 +1,23 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgb(46, 7, 46),
+    rgb(139, 55, 135)
   );
+
+  --resume-background-color: linear-gradient(
+    to bottom left,
+    rgb(19, 15, 19),
+    rgb(114, 31, 142)
+    );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(30, 28, 28, 0.27),
+    rgba(23, 22, 24, 0.767) 
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #231425;
 }
 
 .purple {
@@ -32,7 +38,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #2c282b;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +63,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #d39ed6;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(37, 17, 50, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(241, 201, 246, 0.911);
   border-radius: 12px;
 }
 
@@ -76,7 +82,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #2e1a2ca9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -97,7 +103,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #331341 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,7 +150,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #2f3451 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -155,8 +161,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 1.7em !important;
+  width: 3.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -194,7 +200,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #c15ce9;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -242,13 +248,7 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
+
 
 .home-header {
   padding-top: 80px !important;
@@ -281,12 +281,12 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #1c0c18;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #250a1e !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -321,6 +321,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-image: var(--section-background-color) !important;
 }
 
 .home-about-description {
@@ -371,7 +372,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #9d228b;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -395,14 +396,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #a91996 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(22, 12, 44);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -448,7 +449,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: linear-gradient(black,pink) !important;
 }
 
 .project-card {
@@ -460,7 +461,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(41, 17, 47, 0.764) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +471,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(130, 72, 144, 0.847) !important;
 }
 
 .blog-card {
@@ -483,7 +484,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(146, 77, 161, 0.815) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -501,7 +502,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(154, 88, 173, 0.779) !important;
 }
 
 .card-img-top {
@@ -546,8 +547,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background-image: linear-gradient(rgb(255, 246, 246) rgb(18, 18, 18)) !important;
+  color: rgb(251, 251, 251) !important;
 }
 
 .tech-icons {
@@ -555,7 +556,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(68, 22, 90, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -583,7 +584,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: rgb(35, 17, 53) !important;
   background-color: transparent !important;
 }
 
@@ -593,20 +594,21 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 367px) {
   .about-img {
-    padding-top: 0 !important;
+
+    padding-bottom: 0 !important;
   }
 }
 /* --------- */
 /* Resume */
-/* --------- */
+
 
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: var(--resume-background-color)!important;
   color: white !important;
 }
 
